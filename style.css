@@ -1,27 +1,11 @@
-
-body, body * {
-  vertical-align: baseline;
-  overflow: hidden;
-  outline: 0;
-  padding: 0;
-  margin: 0;
+body {
 	font-family: 'Montserrat', sans-serif;
-  font-size: 12pt;
-  color: #333;
-}
-
-html, body {
-  width: 100%;
-  height: 100%;
+	font-size: 1em;
+	line-height: 1.4;
+	color: #222;
 }
 
 h1 { 
-	font: bold 40px/40px 'Open Sans', sans-serif; 
-	color: Indigo; 
-	border-bottom: 2px solid Indigo; 
-}
-
-h2 { 
 	font: bold 28px/28px 'Lato', sans-serif; 
 	margin: 10px 0 10px 0; 
 	padding: 10px;
@@ -30,14 +14,29 @@ h2 {
 	box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
 }
 
-h2 a { 
+h2 { 
+	font: bold 22px/22px 'Open Sans', sans-serif; 
+	color: #666; 
+	border-bottom: 2px solid black; 
+}
+
+h3 { 
+	font: bold 16px/16px;
+}
+
+a { 
 	color: inherit;
+	font-weight: bold;
 	text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 a:before {
   color: #ffffff;
-  background: #000000;
+  background: rgb(29,74,137);
   font-size: 120%;
   padding: 2px 5px;
   display: inline-block;
@@ -46,17 +45,40 @@ a:before {
   text-align: center;
 }
 
-a[href^="mailto:"]:before {
-  content: "\2709 ";
-}
-a[href^="tel:"]:before {
-  content: "\2706";
-}
-a[href$="vcs"]:before {
-  content: "\231A";
+img {
+    max-width: 100% !important;
 }
 
-#profile {
+p {
+	display: block;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+
+.img-circle {
+  display: block;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 25px 25px -25px;
+}
+
+#main {
+    margin: 0 300px;
+    padding: 0 25px;
+	position: absolute;
+}
+
+#about-container {
 	width: 260px;
 	padding: 30px;
 	background-color:rgb(29,74,137);
@@ -66,12 +88,12 @@ a[href$="vcs"]:before {
 	height: 100%;
 }
 
-#profile ul {
+#about-container ul{
 	list-style: none;
 	padding: 0;
 }
 
-#profile ul a {
+#about-container ul a{
 	display: block;
 	padding: 5px 40px;
 	color: black;
@@ -80,42 +102,24 @@ a[href$="vcs"]:before {
 	text-decoration: none;
 }
 
-a[href*=facebook] {
+a[href*=facebook]{
 	background: white url(icons/facebook.png) 5px center no-repeat;
 }
-a[href*=twitter] {
+a[href*=twitter]{
 	background: white url(icons/twitter.png) 5px center no-repeat;
 }
-a[href*=linkedin] {
+a[href*=linkedin]{
 	background: white url(icons/linkedin.png) 5px center no-repeat;
 }
-a[href*=plus] {
+a[href*=plus]{
 	background: white url(icons/plus.png) 5px center no-repeat;
 }
-
-#main-container {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: #EEE;
+a[href^="mailto:"]:before {
+  content: "\2709 ";
 }
-
-#main-img {
-	max-width: 100%;
+a[href^="tel:"]:before {
+  content: "\2706";
 }
-
-.img-circle {
-  display: block;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  overflow: hidden;
-  margin-left: 25px;
-}
-
-:focus {
-  outline:none;
-}
-::-moz-focus-inner {
-  border:0;
+a[href$="vcs"]:before {
+  content: "\231A";
 }
