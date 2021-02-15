@@ -14,10 +14,6 @@ h1, h2 {
 	font-family: "Montserrat", sans-serif;
 }
 
-#projects h2 {
-	color: #666;
-	text-align: center;
-}
 
 a {
 	color: inherit;
@@ -84,6 +80,11 @@ a:hover {
 #projects {
 	display: flex;
 	justify-content: center;
+	text-align: center;
+}
+
+#projects h2 {
+	color: #666;
 }
 
 #contact {
@@ -140,14 +141,12 @@ div.gallery {
 	margin: 5px;
 	border: 1px solid #ccc;
 	float: left;
-	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
 	transition: 0.3s;
 	width: 400px;
-	text-align: center;
 }
 	
 div.gallery:hover {
-	width: 500px;
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
   
