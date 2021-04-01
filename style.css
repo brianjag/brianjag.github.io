@@ -7,13 +7,12 @@ body {
 	margin: 0;
 	background-color: #eee;
 	color: #222;
-	font-family: "Open Sans", sans-serif;
+	font-family: "Tahoma", "Verdana", sans-serif; 
 }
 
-h1, h2 {
-	font-family: "Montserrat", sans-serif;
+h1, h2  { 
+	font-family: "Trebuchet MS", sans-serif; 
 }
-
 
 a {
 	color: inherit;
@@ -156,7 +155,7 @@ div.gallery img {
 }
   
 div.project-tile {
-	font-size: 1.5em;
+	font-size: 1.4em;
 	padding: 15px;
 }
 
